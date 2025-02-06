@@ -1,11 +1,92 @@
-/* 
+body{margin-top: 50px;
+background-color: black;}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.container {
+    background-image: url('https://wallpapers.com/images/hd/blank-background-nedpm0ow675jnn67.jpg');
+    background-position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;}
+ul {
+    padding: 0;
+    margin: 0 70px 0 40px;
+    list-style: none;
+}
 
-*/
+ul li {
+    
+    border: 1px solid maroon;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+h1 {
+    padding-top: 180px;
+    text-align: center;
+    color: rgb(94, 27, 3);
+}
+
+
+input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+
+div {
+    margin-left: 40px;
+    color: rgb(94, 27, 3);
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) {
+    ul {
+        margin-left: 20px;  
+        margin-right: 20px; 
+    }
+
+    ul li {
+        padding: 8px;  
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    div {
+        font-size: 14px;  
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 50px; 
+    }
+
+    ul {
+        margin-left: 10px;  
+        margin-right: 10px;
+    }
+
+    ul li {
+        padding: 5px;  
+    }
+
+    h1 {
+        font-size: 20px;  
+    }
+
+    div {
+        font-size: 12px;  
+    }
+
+    input {
+        padding: 8px;  
+    }
+}
