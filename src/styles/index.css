@@ -6,6 +6,7 @@ background-color: black;}
     background-position:absolute;
     background-repeat: no-repeat;
     background-size: cover;}
+
 ul {
     padding: 0;
     margin: 0 70px 0 40px;
@@ -13,12 +14,29 @@ ul {
 }
 
 ul li {
-    
+    display: block; /* Asegura que cada tarea se alinee en bloque */
     border: 1px solid maroon;
     padding: 10px;
     margin-bottom: 5px;
+    word-break: break-word; /* Evita que el texto se salga */
+    overflow-wrap: break-word;
+    width: 100%; /* Asegura que el li ocupe el ancho disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
+.task-text {
+    word-break: break-word; /* Divide las palabras largas */
+    overflow-wrap: break-word;
+    white-space: normal; /* Permite que el texto se ajuste en múltiples líneas */
+   }
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 5px;
+}
 
 h1 {
     padding-top: 180px;
